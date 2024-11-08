@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscon Robotics</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #e0e0e0;
+            background-color: #0a0f1d;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Header Section */
+        header {
+            padding: 20px 0;
+            background-color: #0d1a33;
+            border-radius: 15px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #3da9fc;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #c0d6df;
+        }
+        /* Navigation */
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #3da9fc;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #0a2342;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #0cbdff;
+        }
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            background: linear-gradient(45deg, #0a2342, #3b5998);
+            color: #ffffff;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Sections Styling */
+        .section {
+            padding: 60px 0;
+            margin-bottom: 30px;
+            border-radius: 15px;
+        }
+        .section h3 {
+            font-size: 2em;
+            color: #3da9fc;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #1e2f4d;
+            padding: 20px;
+            border-radius: 15px;
+            color: #c0d6df;
+        }
+        .card h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1em;
+        }
+        /* Contact Section */
+        .contact {
+            background-color: #0d1a33;
+            color: #c0d6df;
+        }
+        .contact form {
+            margin-top: 30px;
+            display: grid;
+            gap: 15px;
+        }
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #1e2f4d;
+            color: #e0e0e0;
+        }
+        .contact button {
+            padding: 15px 30px;
+            background-color: #3da9fc;
+            color: #fff;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact button:hover {
+            background-color: #0cbdff;
+        }
+        /* Footer */
+        footer {
+            padding: 20px 0;
+            color: #666;
+            font-size: 0.9em;
+            background-color: #0a0f1d;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Fiscon Robotics</h1>
+            <p>Thoughtfully Built, Purposefully Engineered.</p>
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Fiscon Robotics</h2>
+            <p>I'm a solo robotics enthusiast with a passion for building powerful, competitive battlebots and exploring new robotic technologies. Explore my projects and connect with me!</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h3>Featured Projects</h3>
+            <div class="section-content">
+                <div class="card">
+                    <h4>Antweight Battlebot - Limbo</h4>
+                    <p>A high-powered and durable flipper battlebot.</p>
+                </div>
+                <div class="card">
+                    <h4>Robot Legs - Carbon V7</h4>
+                    <p>A full sized pair of robot legs designed as a system to test machine learning models.</p>
+                </div>
+                <div class="card">
+                    <h4>Antweight Battlebot - Fall 2024 </h4>
+                    <p>Stay tuned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h3>My Services</h3>
+            <div class="section-content">
+                <div class="card">
+                    <h4>Custom Robotics Design</h4>
+                    <p>Design and build custom robots tailored to your needs, from competitive battlebots to industrial prototypes.</p>
+                </div>
+                <div class="card">
+                    <h4>Machine Learning Integration</h4>
+                    <p>Integrate machine learning models into robotic systems to enhance functionality and adaptability.</p>
+                </div>
+                <div class="card">
+                    <h4>Consultation & Prototyping</h4>
+                    <p>Offering consultation services to help you brainstorm and prototype new robotic technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>Interested in my work or have a project idea? Reach out to connect!</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>mmmmmmm roborts....</p>
+        </div>
+    </footer>
+
+</body>
+</html>
